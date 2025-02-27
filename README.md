@@ -271,3 +271,153 @@ print(c)
 print(type(a))
 print(type(b))
 print(type(c))
+
+# Slice From the Start
+
+## By leaving out the start index, the range will start at the first character:
+
+### Get the characters from the start to position 5 (not included):
+
+b = "Hello, World!"
+print(b[:5]) #Hello
+
+# Slice To the End
+
+## By leaving out the end index, the range will go to the end:
+
+Example
+
+### Get the characters from position 2, and all the way to the end:
+
+b = "Hello, World!"
+print(b[2:]) #llo, World!
+
+# Negative Indexing
+
+## Use negative indexes to start the slice from the end of the string:
+
+Example
+
+### Get the characters:
+
+From: "o" in "World!" (position -5)
+
+To, but not included: "d" in "World!" (position -2):
+
+b = "Hello, World!"
+print(b[-5:-2]) #orl
+
+# Python - Modify Strings
+
+## Upper Case
+
+### The upper() method returns the string in upper case:
+
+a = "Hello, World!"
+print(a.upper())
+
+# Lower Case
+
+## The lower() method returns the string in lower case:
+
+a = "Hello, World!"
+print(a.lower())
+
+# Remove Whitespace
+
+## Whitespace is the space before and/or after the actual text, and very often you want to remove this space.
+
+### The strip() method removes any whitespace from the beginning or the end:
+
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+
+
+# Replace String
+
+## The replace() method replaces a string with another string:
+
+a = "Hello, World!"
+print(a.replace("H", "J"))
+
+# Split String
+
+## The split() method returns a list where the text between the specified separator becomes the list items.
+
+### The split() method splits the string into substrings if it finds instances of the separator:
+
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
+
+# Python - String Concatenation
+
+# String Concatenation
+
+### To concatenate, or combine, two strings you can use the + operator.
+
+### Merge variable a with variable b into variable c:
+
+a = "Hello"
+b = "World"
+c = a + b
+print(c) #HelloWorld
+
+To add a space between them, add a " ":
+
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c) #Hello World
+
+# Python - Format - Strings
+## As we learned in the Python Variables chapter, we cannot combine strings and numbers like this:
+
+Create an f-string:
+
+age = 36
+txt = f "My name is John, I am {age}"
+print(txt)
+
+# Placeholders and Modifiers
+## A placeholder can contain variables, operations, functions, and modifiers to format the value.
+### Add a placeholder for the price variable:
+
+price = 59
+txt = f "The price is {price} dollars"
+print(txt)
+
+# A placeholder can include a modifier to format the value.
+
+A modifier is included by adding a colon : followed by a legal 
+formatting type, like .2f which means fixed point number with 2 decimals:
+
+## Display the price with 2 decimals:
+
+price = 59
+txt = f "The price is {price:.2f} dollars"
+print(txt)
+
+# Perform a math operation in the placeholder, and return the result:
+
+txt = f "The price is {20 * 59} dollars"
+print(txt)
+
+# Boolean
+
+## Most Values are True
+
+## Almost any value is evaluated to True if it has some sort of content.
+
+Any string is True, except empty strings.
+
+Any number is True, except 0.
+
+Any list, tuple, set, and dictionary are True, except empty ones.
+
+Example
+The following will return True:
+
+bool("abc")
+bool(123)
+bool(["apple", "cherry", "banana"])
+
